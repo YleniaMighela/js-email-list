@@ -36,8 +36,9 @@ for (let i = 0; i < 10; i++){
         contenitoreEmail.push(emailRandom);
         console.log(emailRandom);
         
+        
         // successivamente attraverso l'innerHTML stampo in pagina l'email randomica
-        listaEmail.innerHTML = `<li> ${emailRandom} </li>`
+        listaEmail.innerHTML += `<li> ${emailRandom} </li>`
         
     })
     
