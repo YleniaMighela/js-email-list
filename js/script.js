@@ -38,8 +38,11 @@ for (let i = 0; i < 10; i++){
         
         
         // successivamente attraverso l'innerHTML stampo in pagina l'email randomica
-        listaEmail.innerHTML += `<li> ${emailRandom} </li>`
+        listaEmail.innerHTML = `<li> ${emailRandom} </li>`
         
+         // successivamente attraverso l'innerHTML stampo in pagina tutte le email randomiche
+         
+        // listaEmail.innerHTML += `<li> ${emailRandom} </li>`
     })
     
     
