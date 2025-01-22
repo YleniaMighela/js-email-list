@@ -34,10 +34,9 @@ for (let i = 0; i < 10; i++){
         // per aggiungere le email all'interno dell'array
 
         contenitoreEmail.push(emailRandom);
-        console.log(contenitoreEmail);
+        console.log(emailRandom);
         
-        
-        
+
         
     })
     
