@@ -8,7 +8,7 @@ const listaEmail = document.getElementById('emailLista');
 console.log(listaEmail);
 
 
-// creao un array vuoto
+// creo un array vuoto
 
 const contenitoreEmail = [];
 
@@ -21,8 +21,22 @@ for (let i = 0; i < 10; i++){
     axios.get("https://flynn.boolean.careers/exercises/api/random/mail")
     
     .then(risposta => {
-        // da questo consolelog riesco a vedere gli interi oggetti
-        console.log(risposta);
+        // da questo console.log riesco a vedere gli interi oggetti
+        // console.log(risposta);
+        
+
+        // dall'elemento selezionato all'interno della funzione di call back estrapolo la proprietà che mi interessa x ottenere l'elemento EMAIL
+        const emailRandom = risposta.data.response;
+        
+        // una volta preso il dato dell'email lo "stampo" in console
+        // console.log(emailRandom);
+
+        // per aggiungere le email all'interno dell'array
+
+        contenitoreEmail.push(emailRandom);
+        console.log(contenitoreEmail);
+        
+        
         
         
     })
