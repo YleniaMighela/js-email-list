@@ -3,11 +3,17 @@
 // generare 10 indirizzi email e stamparli in pagina all’interno di una lista.
 
 
+// selezione l'elemento di Output
+const listaEmail = document.getElementById('emailLista');
+console.log(listaEmail);
 
 
 
 
 // creo un ciclo un for che mi genera 10 indirizzi email
+
+
+
 
 // per ottenere dati richiamo la libreria axios,generandomi l'email tramite l'API
 
