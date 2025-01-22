@@ -24,19 +24,20 @@ for (let i = 0; i < 10; i++){
         // da questo console.log riesco a vedere gli interi oggetti
         // console.log(risposta);
         
-
+        
         // dall'elemento selezionato all'interno della funzione di call back estrapolo la proprietà che mi interessa x ottenere l'elemento EMAIL
         const emailRandom = risposta.data.response;
         
         // una volta preso il dato dell'email lo "stampo" in console
         // console.log(emailRandom);
-
+        
         // per aggiungere le email all'interno dell'array
-
+        
         contenitoreEmail.push(emailRandom);
         console.log(emailRandom);
         
-
+        // successivamente attraverso l'innerHTML stampo in pagina l'email randomica
+        listaEmail.innerHTML = `<li> ${emailRandom} </li>`
         
     })
     
@@ -48,7 +49,7 @@ for (let i = 0; i < 10; i++){
 
 
 
-// una volta preso il dato dell'email lo "stampo" in console
 
-// successivamente lo stampo in pagina (HTML)
+
+
 
